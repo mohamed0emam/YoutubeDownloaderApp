@@ -31,8 +31,6 @@ To get the app:
 ## 👨‍💻 About the Developer
 
 This tool was developed with passion to solve everyday downloading limits with a professional touch. 
-For more tech solutions, software projects, and tutorials, check out my channel: **Emam 4 Tech**.
-
 ---
 
 ### ⚠️ Disclaimer
