@@ -1,37 +1,28 @@
-# 🚀 YoutubeDownloaderApp
+# 🚀 Pro Playlist Downloader v2.0
 
-A professional, high-speed YouTube video and playlist downloader built with C# WPF. Designed for maximum efficiency, offering seamless downloading, converting, and quality selection in a clean, standalone application.
+Pro Playlist Downloader is a powerful, standalone Windows application designed by **Eng. Mohamed Emam** for high-speed video and audio downloading from YouTube. 
 
-**Developed by:** Eng. Mohamed Emam
-
----
-
-## ✨ Key Features
-
-- **📥 One-Click Playlist Fetching:** Download entire playlists or single videos instantly.
-- **⚙️ Smart Quality Selection:** Choose from 1080p, 720p, 360p, or Audio Only (MP3).
-- **🧮 Dynamic Size Calculator:** Calculates the exact file size *before* downloading using intelligent background caching.
-- **🌗 Auto-Dark/Light Mode:** The UI automatically syncs with your system's theme for a native Windows experience.
-- **🛠️ Built-in Conversion Engine:** Uses deeply integrated `ffmpeg` for flawless video/audio muxing and MP3 conversion without requiring users to install external tools.
-- **⚡ Clean Standalone Setup:** No messy files, no external dependencies. Just a pure, single executable.
+## 📥 [Download Latest Version v2.0](https://github.com/mohamed0emam/YoutubeDownloaderApp/releases/latest)
 
 ---
 
-## 📥 Download & Install
+### ✨ Key Features
+* **Full Playlist Support:** Download entire playlists or select specific videos.
+* **Smart Size Calculator:** Know the total size of your files before you start.
+* **Multiple Qualities:** Choose from 144p up to 1080p, or high-quality MP3 audio.
+* **Subtitle Extraction:** Automatically fetch available SRT subtitles.
+* **Auto Theme Sync:** Beautiful UI that switches between Dark and Light mode based on your Windows settings.
+* **Safe & Secure:** Built with a clean architecture and protected by EULA.
 
-> **Note:** This is a closed-source showcase repository to protect proprietary algorithms and built-in integration techniques.
+### 🖥️ Preview
+<img width="1920" height="1005" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/67eb22e2-c992-4ebb-a569-067e883f999a" />
 
-To get the app:
-1. Navigate to the **[Releases](../../releases)** section on the right side of this page.
-2. Download the latest `Setup.exe` file.
-3. Run the installer and enjoy a smooth downloading experience!
+
+
+
+### 🛡️ License
+This software is **Closed Source**. All rights reserved to the developer **Eng. Mohamed Emam**. By using this tool, you agree to the EULA terms provided during installation.
 
 ---
-
-## 👨‍💻 About the Developer
-
-This tool was developed with passion to solve everyday downloading limits with a professional touch. 
----
-
-### ⚠️ Disclaimer
-This tool is intended for personal use only. Please respect YouTube's Terms of Service and the copyrights of content creators.
+### 📬 Contact & Support
+Developed with passion by **Eng. Mohamed Emam**. For any inquiries, visit the [Issues](https://github.com/mohamed0emam/YoutubeDownloaderApp/issues) section.
