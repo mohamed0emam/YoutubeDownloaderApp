@@ -10,7 +10,7 @@ Built using C# and WPF (MVVM Architecture), this tool acts as a powerful GUI wra
 
 ---
 
-## ✨ Key Features (المميزات الرئيسية)
+## ✨ Key Features 
 
 ### 1. ⚡ Smart & Concurrent Downloading
 - **Batch Processing:** Fetch entire playlists or single URLs with one click.
