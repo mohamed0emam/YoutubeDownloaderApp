@@ -2,48 +2,39 @@
 
 ![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
-![Architecture](https://img.shields.io/badge/Architecture-MVVM-success.svg)
 
 **Pro Playlist Downloader** is a highly optimized, standalone Windows desktop application designed to download full YouTube playlists or single videos with ultimate speed, stability, and smart quality control.
 
-Built using C# and WPF (MVVM Architecture), this tool acts as a powerful GUI wrapper around `yt-dlp` and `FFmpeg`, offering dynamic size calculations, smart subtitle extraction, and military-grade error handling.
+Built with a clean and responsive user interface, this tool offers dynamic size calculations, smart subtitle extraction, and military-grade error handling to ensure a flawless downloading experience.
 
 ---
 
-## ✨ Key Features 
+## ✨ Key Features & Improvements
 
-### 1. ⚡ Smart & Concurrent Downloading
-- **Batch Processing:** Fetch entire playlists or single URLs with one click.
-- **Concurrent Downloads:** Downloads up to **3 videos simultaneously** using `SemaphoreSlim` to maximize bandwidth without overloading the system.
-- **Auto-Dependency Setup:** The app automatically downloads and configures `yt-dlp.exe` and `ffmpeg.exe` in the background if they are missing. No manual setup required!
+### 1. ⚡ Smart & Fast Downloading
+- **Batch Processing:** Fetch entire playlists or single videos with just one click.
+- **Multi-Tasking:** Downloads up to **3 videos simultaneously** to maximize your internet speed without overloading your PC.
+- **Ready to Use:** The app automatically sets up everything it needs in the background. No manual configuration or extra installations required!
 
 ### 2. 💾 Dynamic Size Calculator
-- Real-time estimation of the total download size for all selected videos.
-- Dynamically recalculates sizes when the user changes the quality (e.g., from 1080p to Audio Only) by fetching active stream manifests via `YoutubeExplode`.
-- Auto-formats size displays (MB to GB) for a clean UI.
+- **Know Before You Download:** Get a real-time estimation of the total download size for all selected videos.
+- **Smart Updates:** The total size dynamically updates the moment you change video quality (e.g., from 1080p to Audio Only).
+- **Clean Display:** Automatically formats sizes (MB to GB) for easy reading.
 
 ### 3. 🎬 Advanced Quality & Subtitle Control
-- **Smart Quality Selector:** Choose between Highest Quality, 1080p, 720p, 480p, 360p, or high-quality Audio Only. The engine forces FFmpeg to merge outputs into a clean `.mp4` format.
-- **Subtitle Extraction:** Automatically fetches original and auto-generated captions, saving them as cleanly formatted `.srt` files alongside the video (without embedding them forcefully).
+- **Smart Quality Selector:** Choose between Highest Quality, 1080p, 720p, 480p, 360p, or high-quality Audio Only (MP3). Videos are automatically saved in a clean `.mp4` format.
+- **Subtitle Extraction:** Automatically fetches available subtitles (Auto-generated or original) and saves them as cleanly formatted `.srt` files alongside your video.
 
-### 4. 🛡️ Intelligent Error Handling & Stability
-- **Anti-Crash Architecture:** Uses Windows Native API (`kernel32.dll -> SetErrorMode`) to suppress annoying Windows crash dialogs when killing background processes.
-- **Safe Cancellation:** A highly robust cancellation token system (`CancellationTokenSource`) that instantly kills orphaned `yt-dlp` and `ffmpeg` processes upon user cancellation, preventing memory leaks and UI freezes.
-- **Smart Duplicate Detection:** Automatically detects if a file "already exists" and marks it as completed (Green) instead of throwing an error.
-- **Browser DPAPI / Cookie Lock Detection:** Intelligently detects if your browser's security (Cookies/DPAPI) is blocking the download and provides human-readable UI instructions to fix it.
-- **DRM Protection Detection:** Politely informs the user if the requested video is DRM-protected or region-blocked.
+### 4. 🛡️ Rock-Solid Stability & Error Handling
+- **Anti-Crash Protection:** Enjoy a smooth experience with zero freezing or annoying Windows crash dialogs, even during heavy tasks.
+- **Safe Cancellation:** Click cancel anytime! The app instantly stops all background tasks cleanly without hanging or causing memory leaks.
+- **Smart Duplicate Detection:** Automatically detects if a file "already exists" and skips it (marked in green) instead of throwing an error.
+- **Browser Security Bypass Alerts:** Intelligently detects if your browser's security is blocking the download and provides easy-to-understand instructions to fix it.
+- **DRM & Region Protection Alerts:** Politely informs you if a video is region-blocked or protected by copyright (DRM).
 
 ---
 ### 🖥️ Preview
 <img width="1920" height="1005" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/67eb22e2-c992-4ebb-a569-067e883f999a" />
-
-## 🛠️ Under the Hood (Technical Stack)
-
-- **Framework:** .NET / C# WPF (Windows Presentation Foundation)
-- **Architecture:** MVVM (Model-View-ViewModel) using `ObservableObject`.
-- **Core Libraries:** - `YoutubeDLSharp` (For executing yt-dlp commands & progress tracking).
-  - `YoutubeExplode` (For fast manifest fetching and size estimations).
-- **Background Processing:** Extensively uses `Task`, `async/await`, and `SemaphoreSlim` to keep the UI 100% responsive during heavy operations.
 
 ---
 
