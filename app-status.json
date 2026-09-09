@@ -1,4 +1,6 @@
 {
-  "is_active": false,
-  "message": "This version is no longer supported. Please download the latest version."
+  "is_active": true,
+  "latest_version": "3.0",
+  "min_version": "3.0",
+  "message": "Pro Playlist Downloader v3.0 is now available! Please update to the latest version."
 }
